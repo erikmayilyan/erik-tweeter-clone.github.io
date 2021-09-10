@@ -1,0 +1,122 @@
+.new-tweet {
+  border: 5px solid black;
+  margin-top: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+}
+
+.theButton {
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  color: white;
+}
+
+#tweet-text {
+  color: black;
+  resize: none;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #5e6572;
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+}
+
+.tweets {
+  margin-top: 50px;
+  background-color: #f4f1ec;
+}
+
+.button-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstArticle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+  border: 5px solid black;
+  padding-top: 20px;
+}
+
+.firstArticle:hover {
+  box-shadow: 10px 5px 5px gray;
+}
+
+.thehead {
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nameUser {
+  display: flex;
+  flex-direction: row;
+}
+
+.theText {
+  align-self: flex-start;
+}
+
+.line {
+  height: 5px;
+  background-color: #5e6572;
+}
+
+.ending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.custom-css:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.avatar-container {
+  max-width: 60px;
+  margin-right: 1em;
+}
+
+.avatar-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.error-message {
+  border: 5px solid red;
+  min-height: 50px;
+  margin-top: 20px;
+  color: red;
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+.size-container {
+  display: flex;
+  margin: 2em;
+}
+
+}

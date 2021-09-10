@@ -1,0 +1,46 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: orange;
+}
+
+.firstimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-top: 10px;
+}
+
+.name {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    margin: 2em;
+    margin-left: 0em;
+    margin-top: 1em;
+    height: 40%;
+    width: 35%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 15px;
+  }
+  
+  .firstimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 10px;
+  }
+  
+  .name {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}

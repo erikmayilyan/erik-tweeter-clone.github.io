@@ -1,0 +1,25 @@
+nav {
+  background-color: #4056A1;
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.title {
+  flex: 1;
+  font-family: 'Bungee', sans-serif;
+}
+
+.write {
+  justify-content: flex-end;
+}
+
+.fa-angle-double-down {
+  margin-top: 0px;
+  margin-left: 10px;
+}
