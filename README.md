@@ -4,6 +4,11 @@ Tweeter Project.
 
 Tweeter Project is a single-page AJAX-based Twitter clone that was created using HTML5, jQuery, and CSS3. On this website, you can post multiple tweets.
 
+## Screenshots
+
+!["Screenshot of the Tweet Box"](./docs/tweet-box.png);
+!["Screenshot of the Tweeter Website"](./docs/tweet-web.png);
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
