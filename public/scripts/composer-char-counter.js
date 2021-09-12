@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // --- our code goes here ---
   $("#tweet-text").on("input", () => {
     const theCounter = $("#the-counter");
     const maxValue = 140;
@@ -9,7 +8,7 @@ $(document).ready(function() {
     if (remaining < maxValue * 0) {
       color = 'red';
     } else {
-      color = null;
+      color = '#545149';
     }
     theCounter.text(remaining);
     console.log(color);

@@ -65,29 +65,31 @@ const createTweetElement = function (tweet) {
   return tweetElement;
 }
 
-renderTweets(data);
+$(document).ready(() => {
+  loadTweets();
+  $("form").on("submit", function (event) {
+    let theArea = $("textarea").val();
+    event.preventDefault();
+    if(theArea.length === 0) {
+      $(".error-message").show();
+      $(".error-message").text("The text area cannot be Empty! Please, add some content!");
+    } 
+    if (theArea.length > 140) {
+      $(".error-message").show();
+      $(".error-message").text("The input is too long!! Please, make you content shorter!");
+    }
+    if (theArea.length > 0 && theArea.length <= 140) {
+      const data = $(this).serialize();
+      $.post("/tweets", data)
+        .then(() => {
+          loadTweets();
+          $("textarea").val("");
+          $("#tweet-text").trigger("input");
+        })
+        .catch(error => { console.log(error) })
+    }
+  });
 
-$("form").on("submit", function (event) {
-  let theArea = $("textarea").val();
-  event.preventDefault();
-  if(theArea.length === 0) {
-    $(".error-message").show();
-    $(".error-message").text("The text area cannot be Empty! Please, add some content!");
-  } 
-  if (theArea.length > 140) {
-    $(".error-message").show();
-    $(".error-message").text("The input is too long!! Please, make you content shorter!");
-  }
-  if (theArea.length > 0 && theArea.length <= 140) {
-    const data = $(this).serialize();
-    $.post("/tweets", data)
-      .then(() => {
-        loadTweets();
-        $("textarea").val("");
-        $("#tweet-text").trigger("input");
-      })
-      .catch(error => { console.log(error) })
-  }
 });
 
 const loadTweets = function () {
